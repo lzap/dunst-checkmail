@@ -33,6 +33,7 @@ delay between checks (in seconds).
 =item B<-v/--version>
 
 print version information.
+
 =back
 
 =head1 AUTHOR
