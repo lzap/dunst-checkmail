@@ -47,7 +47,7 @@ int main(int argc,char *argv[]) {
           error(0, 0, "Can't execute notify-send");
       }
     }
-    sleep(3);
+    sleep(100);
 
     if (closedir(dp) != 0)
       error(0, 0, "Can't close directory %s", maildir);
