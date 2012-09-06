@@ -1,0 +1,48 @@
+=head1 NAME
+
+dunst-checkmail - ultra-simple maildir/mbox notificator via dbus
+
+=head1 SYNOPSIS
+
+dunst-checkmail -p [path] [-s time] [-h]
+
+=head1 DESCRIPTION
+
+Dunst-checkmail is a simple daemon that checks maildir and executes notify-send
+to inform the user.
+
+It works with any notification daemon, but it was designed to be used with
+dunst lightweight daemon.
+
+=head1 OPTIONS
+
+=over 4
+
+=item B<-h/--help>
+
+display help message.
+
+=item B<-p/--path>
+
+full path to maildir or mbox file.
+
+=item B<-s/--sleep>
+
+delay between checks (in seconds).
+
+=item B<-v/--version>
+
+print version information.
+=back
+
+=head1 AUTHOR
+
+written by Lukas Zapletal <lzap+pub_at_redhat.com>.
+
+=head1 COPYRIGHT
+
+copyright 2012 Lukas Zapletal and contributors (see LICENSE for licensing information)
+
+=head1 SEE ALSO
+
+dmenu(1), notify-send(1), dunst(1)

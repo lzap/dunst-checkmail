@@ -1,0 +1,6 @@
+dunst-checkmail
+*.o
+core
+vgcore.*
+config.h
+dunst-checkmail.1
