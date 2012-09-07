@@ -24,11 +24,11 @@ display help message.
 
 =item B<-p/--path>
 
-full path to maildir or mbox file.
+full path to maildir or mbox file. Required.
 
 =item B<-s/--sleep>
 
-delay between checks (in seconds).
+delay between checks in seconds (100 by default).
 
 =item B<-v/--version>
 
