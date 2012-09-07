@@ -2,7 +2,7 @@
 PREFIX = /usr/local
 MANPREFIX = ${PREFIX}/share/man
 
-VERSION= $(shell git describe)
+VERSION= $(shell git describe --tags)
 
 # includes and libs
 INCS = $(shell pkg-config --cflags dbus-1)
