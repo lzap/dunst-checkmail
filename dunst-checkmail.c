@@ -74,8 +74,8 @@ void watch_mbox(char *file) {
     if (stat(file, &statentry) == -1)
       error(EXIT_FAILURE, EXIT_FAILURE, "Unable to stat %s", file);
 
-    if (statentry.st_ctime > latest_ctime)
-      latest_ctime = statentry.st_ctime;
+    if (statentry.st_mtime > latest_ctime)
+      latest_ctime = statentry.st_mtime;
 
     if (last_ctime == 0) {
       last_ctime = latest_ctime;
@@ -113,8 +113,8 @@ void watch_maildir(char *maildir) {
       if (stat(dentry->d_name, &statentry) == -1)
         error(EXIT_FAILURE, EXIT_FAILURE, "Unable to stat %s", dentry->d_name);
 
-      if (statentry.st_ctime > latest_ctime)
-        latest_ctime = statentry.st_ctime;
+      if (statentry.st_mtime > latest_ctime)
+        latest_ctime = statentry.st_mtime;
     }
 
     if (last_ctime == 0) {
